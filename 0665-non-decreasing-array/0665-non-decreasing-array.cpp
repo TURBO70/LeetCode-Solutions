@@ -14,13 +14,7 @@ public:
             }else{
                 v[i]=v[i-1];
             }
-
-
-
-
            }
-
-
         }
         return true;
     }
