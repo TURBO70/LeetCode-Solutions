@@ -25,6 +25,7 @@ public:
             pre = half;
             half = tmp;
         }
+        half=pre;
         while (head && half) {
             tmp = head->next;
             pre = half->next;
@@ -33,6 +34,6 @@ public:
             head = tmp;
             half = pre;
         }
-        
+     if (head && head->next) head->next->next = NULL;
     }
 };
